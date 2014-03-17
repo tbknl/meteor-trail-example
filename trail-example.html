@@ -1,0 +1,27 @@
+<head>
+  <title>trail-example</title>
+</head>
+
+<body>
+  {{> message}}
+</body>
+
+<template name="message">
+	<h2>Example for Meteorite packages</h2>
+	<h1><a href="http://beta.atmospherejs.com/package/trail">Trail</a> and <a href="http://beta.atmospherejs.com/package/trail-monitor">Trail-Monitor</a></h1>
+	<p>Press <pre>Ctrl-Shift-M</pre> to toggle the monitor console.</p>
+	{{> generate}}
+</template>
+
+
+<template name="generate">
+	<input class="js-msg" type="text" value="My log message" />
+	<select class="js-level">
+		<option value="DEBUG">DEBUG</option>
+		<option selected="selected" value="INFO">INFO</option>
+		<option value="WARN">WARN</option>
+		<option value="ERROR">ERROR</option>
+	</select>
+	<input class="js-btn-server" type="button" value="Log server-side" />
+	<input class="js-btn-client" type="button" value="Log client-side" />
+</template>
