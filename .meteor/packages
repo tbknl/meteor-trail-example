@@ -5,6 +5,6 @@
 
 standard-app-packages
 insecure
-preserve-inputs
-trail
-trail-monitor
+mrt:trail
+mrt:trail-monitor
+
